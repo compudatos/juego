@@ -1,0 +1,273 @@
+#cero{
+    /* background: url("../Img/Bg.png"); */
+    /* background-size: 100% 100%; */
+    /* background-attachment: fixed; */
+    /* padding-top: 0px; */
+}
+
+#cero_uno {
+    background-color: #BF1F5A;
+}
+
+#uno_uno {
+    background-color: #004768;
+}
+
+#dos_uno {
+    background-color: #762977;
+}
+
+#bground{
+    font:400 140px/1em Courier;
+    text-align:center;
+    background-color: #fff;
+    -pie-background: linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) 0 0 / 50px 50px #f90;
+    behavior: url(/pie/PIE.htc);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.minh-100 {
+        height: 100vh;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: center;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divPadre{
+    height: 100%;
+}
+.form-group {
+    /*display: flex;*/
+    align-items: center;
+}
+.jittery span{animation:jitter 200ms linear infinite;color:#f06d06;display:inline-block}
+@media only screen and (min-width: 1024px) {
+    .q {
+        width: 50px; height: 50px;
+    }
+}
+
+/* Ajustes */
+.textPuntos {
+    z-index: 100;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    vertical-align: middle;
+}
+.textIntentos {
+    z-index: 100;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    vertical-align: middle;
+}
+.countdownTimer {
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+    position: relative !important;
+    top: 0px;
+}
+
+/* Estilos para la contraseña */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+#wrapper {
+    position: relative;
+    margin: auto;
+    vertical-align: middle;
+    padding-left: 40%;
+}
+#rcorners {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size:48px;
+    font-weight:700;
+    font-style:normal;
+    border-radius: 15px;
+    border: 6px solid gray;
+    background-color: gray;
+    color: white;
+    width: 50%;
+    letter-spacing: 5px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size to 40px */
+@media screen and (min-width: 601px) {
+    .countdownTimer {
+        font-size: 35px;
+    }
+    .textPuntos, .textIntentos {
+        font-size: 28px;
+        top: -52px;
+        left: 58px;
+    }
+    #S1, #S2, #S3, #S4, #S5, #S6, #S7, #S8, #S9, #S10 {
+        height: 170px;
+        width: 120px;
+    }
+    .img-circulo {
+        width: 30%;
+    }
+    .img-txt-intentos, .img-txt-puntos {
+        width: 40%;
+    }
+    #BT {
+        width: 75%;
+        margin-top: 5px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size to 30px */
+@media screen and (max-width: 600px) {
+    .countdownTimer {
+        font-size: 22px;
+    }
+    .textPuntos, .textIntentos {
+        font-size: 20px;
+        top: -52px;
+        left: 32px;
+    }
+    .img-circulo {
+        width: 60%;
+    }
+    .img-txt-intentos, .img-txt-puntos {
+        width: 80%;
+    }
+    #wrapper {
+        padding-left: 15%;
+    }
+    #rcorners {
+        width: 80%;
+    }
+    #S1, #S2, #S3, #S4, #S5, #S6, #S7, #S8, #S9, #S10 {
+        height: 75px;
+    }
+    #rowPuntajeIntentos {
+        margin-top: -40px;
+    }
+    #BT {
+        margin-top: 5px;
+    }
+    #kkk {
+        display: none;
+    }
+    .countdownTimer {
+        position: absolute !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .textPuntos, .textIntentos {
+        font-size: 28px;
+        top: -48px;
+        left: 73px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .textPuntos, .textIntentos {
+        font-size: 28px;
+        top: -53px;
+        left: 58px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .textPuntos, .textIntentos {
+        font-size: 28px;
+        top: -46px;
+        left: 80px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .textPuntos, .textIntentos {
+        font-size: 28px;
+        top: -40px;
+        left: 98px;
+    }
+}
+
+/* Tooltip */
+.tooltip-inner {
+    background-color: #fff !important;
+    color: #fff;
+}
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    border-top-color: #fff !important;
+}
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    border-right-color: #fff !important;
+}
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #fff !important;
+}
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    border-left-color: #fff !important;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    /* color: white; */
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    bottom: 8px;
+    top: 118%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 70%;
+}
+
+.container-fluid {
+    margin-top: 5%;
+}

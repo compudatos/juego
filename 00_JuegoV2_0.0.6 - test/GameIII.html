@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0",user-scalable=no>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Styles/GameStyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Memorama</title>
+</head>
+<body id="bground">
+    <div class="container-fluid" id="Cont">
+        <div class="row">
+            <div class="col-6">
+                <img src="Img/membrete.png" class="img-fluid float-left" width="50%" height="50%">
+            </div>
+            <div class="col-6">
+                <img src="Img/level_3.png" class="img-fluid float-right" width="50%" height="50%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="Img/header_instrumentos_3.png" class="img-fluid float-center" width="75%" height="75%">
+            </div>
+        </div>
+        <div class="row form-group" id="rowCardsTop">
+            <div class="col-1 col-md-1"></div>
+            <div class="col-2 col-md-2 p-0" id="C1">
+                <input type="hidden" id="J1" value="">
+                <img src="Img/IB.png" class="" id="S1">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C2">
+                <input type="hidden" id="J2" value="">
+                <img src="Img/IB.png" class="" id="S2">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C3">
+                <input type="hidden" id="J3" value="">
+                <img src="Img/IB.png" class="" id="S3">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C4">
+                <input type="hidden" id="J4" value="">
+                <img src="Img/IB.png" class="" id="S4">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C5">
+                <input type="hidden" id="J5" value="">
+                <img src="Img/IB.png" class="" id="S5">
+            </div>
+            <div class="col-1 col-md-1"></div>
+        </div>
+        <div class="row" id="rowCardsBottom">
+            <div class="col-1 col-md-1"></div>
+            <div class="col-2 col-md-2 p-0" id="C6">
+                <input type="hidden" id="J6" value="">
+                <img src="Img/IB.png" class="" id="S6">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C7">
+                <input type="hidden" id="J7" value="">
+                <img src="Img/IB.png" class="" id="S7">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C8">
+                <input type="hidden" id="J8" value="">
+                <img src="Img/IB.png" class="" id="S8">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C9">
+                <input type="hidden" id="J9" value="">
+                <img src="Img/IB.png" class="" id="S9">
+            </div>
+            <div class="col-2 col-md-2 p-0" id="C10">
+                <input type="hidden" id="J10" value="">
+                <img src="Img/IB.png" class="" id="S10">
+            </div>
+            <div class="col-1 col-md-1"></div>
+        </div>
+
+        <!-- Ajustes -->
+        <div class="row" id="rowPuntajeIntentos" style="margin-top: 0.2em">
+            <div class="col-2 col-md-2"></div>
+            <div class="col-8 col-md-8">
+                <div class="row">
+                    <div class="col-4 col-md-3 col-lg-3">
+                        <!-- Intentos -->
+                        <img src="Img/Ci.png" class="img-fluid img-circulo" />
+                        <p class="textIntentos" id="score">0</p>
+                        <img src="Img/In_3.png" class="img-fluid img-txt-intentos" />
+                    </div>
+                    <div class="col-4 form-group col-md-6 col-lg-6" id="playDiv" onclick="jugar()">
+                        <div class="form-group" id="playButton">
+                            <div class="countdownTimer">
+                                <div class="centered">Play</div>
+                                <img src="Img/Flecha.png" class="img-fluid mb-n5" height="86" width="100">
+                            </div>
+                        </div>
+                        <div class="row form-group" id="counter" hidden="True">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8 countdownTimer ">
+                                <img src="Img/T0.png" id="BT" class="img-fluid mb-n5" data-toggle="tooltip">
+                                <!-- Cuenta regresiva 1 minuto -->
+                                <span id="time">01:00</span>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3">
+                        <!-- Puntos -->
+                        <img src="Img/Ci.png" class="img-fluid img-circulo" />
+                        <p class="textPuntos" id="puntos">0</p>
+                        <img src="Img/Pt_3.png" class="img-fluid img-txt-puntos" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-md-2"></div>
+        </div>
+
+    </div>
+</body>
+<script src="Back_EndII.js"></script>
+<script src="CountdownTimer.js"></script>
+</html>
